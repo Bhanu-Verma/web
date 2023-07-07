@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>layout in css</title>
+    <style>
+        body{background-color: aquamarine;}
+
+        .main{
+            display: flex;
+            justify-content: space-between;
+            text-align: center;
+            flex-wrap: nowrap;
+        }
+        .sub{
+            border: 2px solid green;
+            border-radius:6px;
+            height: 400px;
+            width: 400px;
+            text-align: center;
+            font-size: 1.5em;
+            color:blue;
+            background-color: lightpink;
+            display:flex;
+            justify-content: space-between;
+            flex-direction: column;
+            flex-wrap: wrap;
+            overflow: auto;
+            
+
+        }
+
+        .subsub1,.subsub2{border: 1px solid green;
+            border-radius:3px;
+            background-color:black;
+            color:white;
+            text-align: center;
+            height:30px;
+            width:30px;
+            overflow: hidden;
+            margin-left: 30px;
+            margin-top: 10px;
+            margin-bottom: 10px;
+            margin-right: 30px;
+
+
+
+        }
+
+        #english{display: inline-block;
+            margin:auto;
+           
+
+        }
+
+        #mathematics{margin-left: 25%;}
+        #x{margin-top: 143px;}
+
+        .subsub1:nth-child(5n+1){margin-top: 143px;}
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="sub"><h2 id="english">English</h2>
+            <div class="subsub1">a</div>
+            <div class="subsub1">b</div>
+            <div class="subsub1">c</div>
+            <div class="subsub1">d</div>
+            <div class="subsub1">e</div>
+            <div class="subsub1">f</div>
+            <div class="subsub1">g</div>
+            <div class="subsub1">h</div>
+            <div class="subsub1">i</div>
+            <div class="subsub1">j</div>
+            <div class="subsub1">k</div>
+            <div class="subsub1">l</div>
+            
+            <div class="subsub1">m</div>
+            <div class="subsub1">n</div>
+            <div class="subsub1">o</div>
+            <div class="subsub1">p</div>
+            <div class="subsub1">q</div>
+            <div class="subsub1">r</div>
+           
+            
+           
+
+            
+            
+            
+            
+        
+        </div>
+        <div class="sub"><h2 id="mathematics">Mathematics</h2><br>
+            <div class="subsub2">1</div>
+            <div class="subsub2">2</div>
+            <div class="subsub2">3</div>
+            <div class="subsub2">4</div>
+            <div class="subsub2">5</div>
+            <div class="subsub2" id="x">6</div>
+            <div class="subsub2">7</div>
+            <div class="subsub2">8</div>
+            <div class="subsub2">9</div>
+            <div class="subsub2">10</div>
+            <div class="subsub2">11</div>
+           
+        </div>
+    </div>
+</body>
+</html>
